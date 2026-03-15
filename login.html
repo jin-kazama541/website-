@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>me</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+}
+
+header {
+  background: #111;
+  color: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: navSlide 0.8s ease;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+@keyframes navSlide {
+  from {
+    transform: translateY(-60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+header h1 {
+  font-size: 22px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 14px;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background: #ff9900;
+  transition: 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+.hero {
+  height: 400px;
+  background: url("/226d6eac6a029e52c6e287a514a2ae19.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero h2 {
+  background: rgba(0,0,0,0.6);
+  padding: 20px 40px;
+  border-radius: 10px;
+  font-size: 32px;
+}
+
+.container {
+  padding: 50px 40px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.price {
+  color: #ff6600;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+button {
+  background: #111;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #ff9900;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: white;
+  margin-top: 40px;
+}
+</style>
+
+</head>
+<body>
+<header>
+  <h1>T^T</h1>
+  <nav>
+  <a href="login2.html">skills</a>
+  <a href="login3.html">about</a>
+</nav>
+</header>
+
+<section class="hero">
+  <h2>Welcome to My web mga kumag</h2>
+</section>
+
+<section class="container" id="shop">
+  <h2 style="margin-bottom:20px;">listahan yan👇</h2>
+  
+  <div class="baby ko">
+    
+    <div class="card">
+      <img src="/IMG_20250325_170359_553.jpg">
+      <div class="card-content">
+        <h3>mga chikababes ko ⬇️</h3>
+        <div class="baby ko"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="/a45a0b7d04f45c46efb9a431c662db05.jpg">
+      <div class="card-content">
+        <h3>BABY KO</h3>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="/IMG_20260303_050101_182.jpg">
+      <div class="card-content">
+        <h3>BABY KO 2</h3>
+      </div>
+    </div>
+    
+       <div class="card">
+      <img src="/FB_IMG_1747895569179.jpg">
+      <div class="card-content">
+        <h3>fine shyt kung hei fat choi</h3>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  tapos na
+</footer>
+
+</body>
+</html>

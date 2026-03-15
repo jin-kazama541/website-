@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me</title>
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: Arial;
+  background:white;
+  text-align:center;
+}
+
+/* HEADER */
+header{
+  background:url(/96975596ee7b3982f2df51935967002e.jpg) center/cover no-repeat;
+  color:white;
+  padding:15px;
+  animation:slideDown 0.8s ease;
+}
+
+/* NAV LINKS */
+a{
+  color:white;
+  margin:0 15px;
+  text-decoration:none;
+  position:relative;
+  font-weight:bold;
+}
+
+/* underline animation */
+a::after{
+  content:"";
+  position:absolute;
+  width:0%;
+  height:2px;
+  background:white;
+  left:0;
+  bottom:-4px;
+  transition:0.3s;
+}
+
+a:hover::after{
+  width:100%;
+}
+
+/* SECTION */
+section{
+  padding:60px;
+  animation:fadeUp 1s ease;
+}
+
+/* TEXT HOVER */
+section p:hover{
+  color:#ff6600;
+  transform:scale(1.1);
+  transition:0.3s;
+}
+
+/* ANIMATIONS */
+@keyframes slideDown{
+  from{
+    transform:translateY(-50px);
+    opacity:0;
+  }
+  to{
+    transform:translateY(0);
+    opacity:1;
+  }
+}
+
+@keyframes fadeUp{
+  from{
+    transform:translateY(40px);
+    opacity:0;
+  }
+  to{
+    transform:translateY(0);
+    opacity:1;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>About Me</h1>
+  <a href="login.html">Home</a>
+  <a href="login2.html">Skills</a>
+  <a href="login3.html">About</a>
+</header>
+
+<section>
+  <h2>gwapo</h2>
+  <p>handsome</p>
+  <p>pogi</p>
+  <p>6'2, nonchalant, matcha lover, love's reading books, listening to niki,beabadobee, period cramps hater</p>
+</section>
+</body>
+</html>

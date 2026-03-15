@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Skills</title>
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: Arial;
+  background:#f4f4f4;
+  text-align:center;
+}
+
+/* NAVBAR */
+header{
+  background:url(/CPwZEKz5brH6Ap8bqY8uzH.jpg) center/cover no-repeat;
+  color:white;
+  padding:15px;
+  position:sticky;
+  top:0;
+  animation:slideDown 0.8s ease;
+}
+
+/* NAV LINKS */
+a{
+  color:white;
+  margin:0 15px;
+  text-decoration:none;
+  position:relative;
+  font-weight:bold;
+}
+
+/* underline animation */
+a::after{
+  content:"";
+  position:absolute;
+  width:0%;
+  height:2px;
+  background:white;
+  left:0;
+  bottom:-4px;
+  transition:0.3s;
+}
+
+a:hover::after{
+  width:100%;
+}
+
+/* SECTION */
+section{
+  padding:60px;
+}
+
+/* SKILL ITEMS */
+section p{
+  font-size:20px;
+  margin:15px 0;
+  opacity:0;
+  animation:fadeUp 1s forwards;
+}
+
+section p:nth-child(2){animation-delay:0.3s;}
+section p:nth-child(3){animation-delay:0.6s;}
+section p:nth-child(4){animation-delay:0.9s;}
+
+/* HOVER EFFECT */
+section p:hover{
+  transform:scale(1.1);
+  color:#ff6600;
+  transition:0.3s;
+}
+
+/* ANIMATIONS */
+@keyframes slideDown{
+  from{
+    transform:translateY(-50px);
+    opacity:0;
+  }
+  to{
+    transform:translateY(0);
+    opacity:1;
+  }
+}
+
+@keyframes fadeUp{
+  from{
+    transform:translateY(40px);
+    opacity:0;
+  }
+  to{
+    transform:translateY(0);
+    opacity:1;
+  }
+}
+
+.picture{
+  width:380px;
+  height:245px;
+  object-fit:cover;
+  margin-top:10px;
+  border:3px solid white;
+  box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>My Skills</h1>
+  <a href="login.html">Home</a>
+  <a href="login2.html">Skills</a>
+  <a href="login3.html">About</a>
+</header>
+
+<section>
+  <h2></h2>
+  <p>• yearner</p>
+  <p>• relapse</p>
+  <p>• pro prayer</p>
+</section>
+
+<img src="/Screenshot_20260301-161735.jpg" class="picture">
+
+</body>
+</html>
